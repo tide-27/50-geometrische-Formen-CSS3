@@ -1,0 +1,1175 @@
+1. Kreis
+HTML:
+
+<div id="circle"></div>
+CSS:
+
+#circle { 
+   width: 140px;
+   height: 140px;
+   background: #037CA9; 
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+   border-radius: 70px;
+}
+
+2. Quadrat
+
+
+HTML:
+
+<div id="square"></div>
+
+#square {
+   width: 140px; 
+   height: 140px; 
+   background: #037CA9; 
+}
+
+
+3. Quadrat mit Kontur
+
+
+#square-border {
+    background: #FFF;
+    border: 10px solid #037CA9;
+    height: 120px;
+    width: 120px;
+}
+
+
+4. Oval
+
+
+#oval {
+   width: 200px; 
+   height: 100px; 
+   background: #037CA9; 
+   -moz-border-radius: 100px / 50px; 
+   -webkit-border-radius: 100px / 50px; 
+   border-radius: 100px / 50px;
+}
+
+
+5. Dreieck (Nach oben)
+
+
+#up-triangle {
+   width: 0; 
+   height: 0; 
+   border-bottom: 120px solid #037CA9; 
+   border-left: 60px solid transparent; 
+   border-right: 60px solid transparent; 
+}
+
+
+6. Dreieck (Nach unten)
+
+
+#down-triangle { 
+   width: 0; 
+   height: 0;
+   border-top: 80px solid #037CA9;
+   border-left: 60px solid transparent; 
+   border-right: 60px solid transparent; 
+}
+
+
+7. Dreieck (Nach links)
+
+
+#left-triangle {
+   width: 0;
+   height: 0;
+   border-right: 100px solid #037CA9;
+   border-top: 50px solid transparent;
+   border-bottom: 50px solid transparent;
+}
+
+
+8. Dreieck (Nach rechts)
+
+
+#right-triangle {
+   width: 0;
+   height: 0;
+   border-left: 100px solid #037CA9;
+   border-top: 50px solid transparent;
+   border-bottom: 50px solid transparent;
+}
+
+
+9. Trapez
+
+
+#trapezium {
+   height: 0; 
+   width: 80px;
+   border-bottom: 80px solid #037CA9;
+   border-left: 40px solid transparent;
+   border-right: 40px solid transparent;
+}
+
+
+10. Trapez mit Kontur
+
+
+#trapezium-border{
+    width: 70px;
+    height: 0;
+    border-bottom: solid 70px #037CA9;
+    border-left: solid 30px transparent;
+    border-right: solid 30px transparent;
+    position: relative;
+    margin: 15px 0 0 -10px;
+}
+ 
+#trapezium-border:before{
+    content: "";
+    width: 58px;
+    height: 0;
+    border-bottom: solid 50px #fff  ;
+    border-left: solid 20px transparent;
+    border-right: solid 20px transparent;
+    position: absolute;
+    right: -14px;
+    top: 10px;
+} 
+
+
+11. Rechteck
+
+
+#rectangle {
+   width: 140px; 
+   height: 80px;
+   background: #037CA9;
+}
+
+
+12. Halb abgerundetes Rechteck
+
+
+#semirounded-rectangle{
+    background: #037CA9;
+    width: 100px;
+    height: 100px;
+    border-radius: 0 50px 50px 0;
+} 
+
+
+13. Halb abgerundetes Rechteck mit Kontur
+
+
+#semirounded-rectangle-borders{
+    background: #037CA9;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 0 50px 50px 0;
+}
+ 
+#semirounded-rectangle-borders:before{
+    background: #fff;
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 0 50px 50px 0;
+} 
+
+
+14. Viertelkreis
+
+
+#quartercircle{
+    background: #037CA9;
+    width: 100px;
+    height: 100px;
+    border-radius: 0 0 0 100px;
+} 
+
+
+15. Viertelkreis mit Kontur
+
+
+#quartercircle-border{
+    background: #037CA9;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 0 0 0 90px;
+}
+ 
+#quartercircle-border:before{
+    content: "";
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 0 0 0 110px;
+} 
+
+
+16. Stern mit 12 Zacken
+
+
+#twelve-point-star {
+   height: 100px;
+   width: 100px;
+   background: #037CA9;
+   position: absolute;
+}
+ 
+#twelve-point-star:before {
+   height: 100px;
+   width: 100px;
+   background: #037CA9;
+   content:"";
+   position: absolute;
+   /* Rotate */
+   -moz-transform: rotate(30deg);
+   -webkit-transform: rotate(30deg);
+   -ms-transform: rotate(30deg);
+   -o-transform: rotate(30deg);
+   transform: rotate(30deg);
+}
+ 
+#twelve-point-star:after {
+   height: 100px;
+   width: 100px;
+   background: #037CA9;
+   content:"";
+   position: absolute;
+   /* Rotate */
+   -moz-transform: rotate(-30deg);
+   -webkit-transform: rotate(-30deg);
+   -ms-transform: rotate(-30deg);
+   -o-transform: rotate(-30deg);
+   transform: rotate(-30deg);
+}
+
+
+17. Stern mit 12 Zacken und doppelter Kontur
+
+
+#star-double-border{
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border: double 10px #037CA9;
+    margin: 10px;
+    position: relative;
+}
+   
+#star-double-border:before{
+    content: "";
+    background: transparent;
+    width: 60px;
+    height: 60px;
+    border: double 10px #037CA9;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    transform: rotate(30deg);
+}
+ 
+#star-double-border:after{
+    content: "";
+    background: transparent;
+    width: 60px;
+    height: 60px;
+    border: double 10px #037CA9;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    transform: rotate(60deg);
+}  
+
+
+18. Stern mit 6 Zacken
+
+
+#six-point-star {
+   position: absolute;
+   width: 0; 
+   height: 0; 
+   border-left: 50px solid transparent; 
+   border-right: 50px solid transparent; 
+   border-bottom: 80px solid #037CA9;
+}
+ 
+#six-point-star:after {
+   content:"";
+   position: absolute;
+   width: 0; 
+   height: 0; 
+   border-left: 50px solid transparent; 
+   border-right: 50px solid transparent; 
+   border-top: 80px solid #037CA9;
+   margin: 30px 0 0 -50px;
+}
+
+
+19. Stern mit 5 Zacken
+
+
+#star {
+   margin: 50px 0;
+   position: relative;
+   display: block;
+   color: #037CA9;
+   width: 0px;
+   height: 0px;
+   border-right:  100px solid transparent;
+   border-bottom: 70px  solid #037CA9;
+   border-left:   100px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+}
+ 
+#star:before {
+   border-bottom: 80px solid #037CA9;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px;
+   left: -65px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+}
+ 
+#star:after {
+   position: absolute;
+   display: block;
+   color: #037CA9;
+   top: 3px;
+   left: -105px;
+   width: 0px;
+   height: 0px;
+   border-right: 100px solid transparent;
+   border-bottom: 70px solid #037CA9;
+   border-left: 100px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+
+
+20. Stern mit gepunkteter Kontur
+
+
+#star-dotted-border{
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border: dotted 10px #000;
+    margin: 10px;
+    position: relative;
+}
+ 
+#star-dotted-border:before{
+    content: "";
+    background: transparent;
+    width: 60px;
+    height: 60px;
+    border: dotted 10px #000;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    transform: rotate(30deg);
+}
+   
+#star-dotted-border:after{
+    content: "";
+    background: transparent;
+    width: 60px;
+    height: 60px;
+    border: dotted 10px #000;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    transform: rotate(60deg);
+} 
+
+
+21. Parallelogramm
+
+
+#parallelogram {
+   width: 130px; 
+   height: 75px;
+   background: #037CA9;
+   /* Skew */
+   -webkit-transform: skew(20deg); 
+   -moz-transform: skew(20deg); 
+   -o-transform: skew(20deg);
+   transform: skew(20deg);
+}
+
+
+22. Parallelogramm mit Kontur
+
+
+#parallelogram-solid-border{
+    background: #fff;
+    width: 100px;
+    height: 80px;
+    position: relative;
+    border: solid 10px #037CA9;
+    margin-left: -10px;
+    transform: skew(-15deg);
+} 
+
+
+23. Parallelogramm mit gestrichelter Kontur
+
+
+#parallelogram-dashed-border{
+    background: #fff;
+    width: 100px;
+    height: 80px;
+    position: relative;
+    border: dashed 10px #037CA9;
+    margin-left: -10px;
+    transform: skew(-15deg);
+} 
+
+
+24. Fünfeck
+
+
+#pentagon {
+    position: relative;
+    width: 54px;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: #037CA9 transparent;
+}
+ 
+#pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent #037CA9;
+}
+
+
+25. Sechseck
+
+
+#hexagon { 
+    width: 100px; 
+    height: 55px; 
+    background: #037CA9; 
+    position: relative; 
+} 
+ 
+#hexagon:before { 
+    content: ""; 
+    position: absolute; 
+    top: -25px; 
+    left: 0; 
+    width: 0; 
+    height: 0; 
+    border-left: 50px solid transparent; 
+    border-right: 50px solid transparent; 
+    border-bottom: 25px solid #037CA9; 
+} 
+ 
+#hexagon:after { 
+    content: ""; 
+    position: absolute; 
+    bottom: -25px; 
+    left: 0; 
+    width: 0; 
+    height: 0; 
+    border-left: 50px solid transparent; 
+    order-right: 50px solid transparent; 
+    border-top: 25px solid #037CA9; 
+}
+
+
+26. Achteck
+
+
+#octagon {
+   width: 100px; 
+   height: 100px; 
+   background: #037CA9;
+}
+ 
+#octagon:before {
+   height: 0;
+   width: 40px;
+   content:"";
+   position: absolute; 
+   border-bottom: 30px solid #037CA9;
+   border-left: 30px solid white; 
+   border-right: 30px solid white; 
+}
+ 
+#octagon:after {
+   height: 0;
+   width: 40px;
+   content:"";
+   position: absolute; 
+   border-top: 30px solid #037CA9; 
+   border-left: 30px solid white;  
+   border-right: 30px solid white; 
+   margin: 70px 0 0 0;
+}
+
+
+27. Pilz
+
+
+#mushroom{
+    position: relative;
+    width: 150px;
+    height: 75px;
+    background: #037CA9;
+    border-radius: 100% 100% 0 0 / 170% 170% 0 0;
+}
+   
+#mushroom:after{
+    position: absolute;
+    content:'';
+    width: 50px;
+    height: 95px;
+    background: #037CA9;
+    left: 50%;
+    margin-left: -25px;
+    border-radius: 100% 100% 50% 50% / 200% 200% 30% 30%;
+    top: 50%;
+} 
+
+
+28. Kreuz in X-Form
+
+
+#cross{
+background: #037CA9;
+width: 33px;
+height: 100px;
+position: relative;
+margin-left: 33px;
+transform: rotate(45deg);
+}
+ 
+#cross:before{
+background: #037CA9;
+content: "";
+width: 100px;
+height: 33px;
+position: absolute;
+top: 33px;
+left: -33px;
+}
+
+
+29. Kreuz in X-Form mit abgerundeten Kanten
+
+
+
+#cross-rounded-borders{
+    background: #037CA9;
+    width: 33px;
+    height: 100px;
+    position: relative;
+    margin-left: 33px;
+    transform: rotate(45deg);
+    border-radius: 20px;
+}
+   
+#cross-rounded-borders:before{
+    background: #037CA9;
+    content: "";
+    width: 100px;
+    height: 33px;
+    position: absolute;
+    top: 33px;
+    left: -33px;
+    border-radius: 20px;
+} 
+
+
+30. Plus
+
+
+#plus{
+    background: #037CA9;
+    width: 33px;
+    height: 100px;
+    position: relative;
+    margin-left: 33px;
+}
+ 
+#plus:before{
+    background: #037CA9;
+    content: "";
+    width: 100px;
+    height: 33px;
+    position: absolute;
+    top: 33px;
+    left: -33px;
+} 
+
+
+31. Plus mit abgerundeten Kanten
+
+
+#plus-rounded-borders{
+    background: #037CA9;
+    width: 33px;
+    height: 100px;
+    position: relative;
+    margin-left: 33px;
+    border-radius: 20px;
+}
+   
+#plus-rounded-borders:before{
+    background: #037CA9;
+    content: "";
+    width: 100px;
+    height: 33px;
+    position: absolute;
+    top: 33px;
+    left: -33px;
+    border-radius: 20px;
+} 
+
+
+32. Sprechblase
+
+
+#speech-bubble {
+   width: 120px; 
+   height: 80px; 
+   background: #037CA9;
+   position: absolute;
+   -moz-border-radius: 10px; 
+   -webkit-border-radius: 10px; 
+   border-radius: 10px;
+}
+ 
+#speech-bubble:before {
+   content:"";
+   position: absolute;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid #037CA9;
+   border-bottom: 13px solid transparent;
+   margin: 13px 0 0 -25px;
+}
+
+
+33. Ei
+ 
+
+#egg {
+   display:block;
+   width:126px; 
+/* width has to be 70% of height */
+/* could use width:70%; in a square container */
+   height:180px;
+   background-color:#037CA9;
+    
+/* beware that Safari needs actual
+ px for border radius (bug) */
+   -webkit-border-radius:63px 63px 63px 63px/
+   108px 108px 72px 72px;
+   /* fails in Safari, but overwrites in Chrome */
+   border-radius:50% 50% 50% 50%/60% 60% 40% 40%;
+}
+
+
+34. Pacman
+
+
+#pacman {
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid #037CA9;
+    border-left: 60px solid #037CA9;
+    border-bottom: 60px solid #037CA9;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+
+35. Biohazard
+
+
+#biohazard {
+  width: 0;
+  height: 0;
+  border-bottom: 60px solid black;
+  border-top: 60px solid black;
+  border-left: 60px solid yellow;
+  border-right: 60px solid yellow;
+  -moz-border-radius: 60px; 
+  -webkit-border-radius: 60px; 
+  border-radius: 60px;
+}
+
+
+36. Herz
+
+
+#heart { 
+    position: relative;
+}
+ 
+#heart:before, #heart:after {
+    position: absolute;
+    content: "";
+    left: 70px; top: 0;
+    width: 70px;
+    height: 115px;
+    background: #037CA9;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;-o-transform-origin: 0 100%;transform-origin: 0 100%;
+} 
+   
+#heart:after {
+    left: 0; 
+    -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    transform: rotate(45deg); 
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%; 
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%; 
+    transform-origin :100% 100%;
+}
+
+
+37. Unendlichkeit
+
+
+
+#infinity { 
+    position: relative; 
+    width: 212px; 
+    height: 100px; 
+} 
+ 
+#infinity:before, #infinity:after { 
+    content: ""; 
+    position: absolute; 
+    top: 0; left: 0; 
+    width: 60px; 
+    height: 60px; 
+    border: 20px solid #037CA9; 
+    -moz-border-radius: 50px 50px 0 50px; 
+    border-radius: 50px 50px 0 50px; 
+    -webkit-transform: rotate(-45deg); 
+    -moz-transform: rotate(-45deg); 
+    -ms-transform: rotate(-45deg); 
+    -o-transform: rotate(-45deg); 
+    transform: rotate(-45deg); 
+} 
+ 
+#infinity:after { 
+    left: auto; 
+    right: 0; 
+    -moz-border-radius: 50px 50px 50px 0; 
+    border-radius: 50px 50px 50px 0; 
+    -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    transform: rotate(45deg); 
+}
+
+
+38. Diamant
+
+
+
+#diamond { 
+    width: 0; 
+    height: 0; 
+    border: 50px solid transparent; 
+    border-bottom-color: #037CA9; 
+    position: relative; 
+    top: -50px; 
+} 
+ 
+#diamond:after { 
+    content: ''; 
+    position: absolute; 
+    left: -50px; top: 50px; 
+    width: 0; height: 0; 
+    border: 50px solid transparent; 
+    border-top-color: #037CA9; 
+}
+
+
+39. Diamant mit abgeflachtem Kopfteil
+
+
+#diamond-shield { 
+    width: 0; 
+    height: 0; 
+    border: 50px solid transparent; 
+    border-bottom: 20px solid #037CA9; 
+    position: relative; top: -50px; 
+} 
+ 
+#diamond-shield:after { 
+    content: ''; 
+    position: absolute; 
+    left: -50px; 
+    top: 20px; 
+    width: 0; 
+    height: 0; 
+    border: 50px solid transparent;  
+} 
+
+    
+40. Diamant (schmal)
+
+
+
+#diamond-narrow { 
+    width: 0;
+    height: 0; 
+    border: 50px solid transparent; 
+    border-bottom: 70px solid #037CA9; 
+    position: relative; 
+    top: -50px; 
+} 
+ 
+#diamond-narrow:after { 
+    content: ''; 
+    position: absolute; 
+    left: -50px; 
+    top: 70px; 
+    width: 0; 
+    height: 0; 
+    border: 50px solid transparent; 
+    border-top: 70px solid #037CA9;
+} 
+
+
+41. Diamant mit abgeschnittenem Kopfteil
+
+
+#cut-diamond { 
+    border-style: solid; 
+    border-color: transparent transparent #037CA9 transparent; 
+    border-width: 0 25px 25px 25px; 
+    height: 0; 
+    width: 50px; 
+    position: relative; 
+    margin: 20px 0 50px 0; 
+} 
+ 
+#cut-diamond:after { 
+    content: ""; 
+    position: absolute; 
+    top: 25px; 
+    left: -25px; 
+    width: 0; 
+    height: 0; 
+    border-style: solid; 
+    border-color: #037CA9 transparent transparent transparent; 
+    border-width: 70px 50px 0 50px; 
+} 
+
+
+42. Yin und Yang
+
+
+
+#yin-yang { 
+    width: 96px; 
+    height: 48px; 
+    background: #eee; 
+    border-color: #037CA9; 
+    border-style: solid; 
+    border-width: 2px 2px 50px 2px; 
+    border-radius: 100%; 
+    position: relative; 
+} 
+ 
+#yin-yang:before { 
+    content: ""; 
+    position: absolute; 
+    top: 50%; 
+    left: 0; 
+    background: #eee; 
+    border: 18px solid #037CA9; 
+    border-radius: 100%; 
+    width: 12px; height: 12px; 
+} 
+ 
+#yin-yang:after { 
+    content: ""; 
+    position: 
+    absolute; 
+    top: 50%; 
+    left: 50%; 
+    background: #037CA9; 
+    border: 18px solid #eee; 
+    border-radius:100%; 
+    width: 12px; 
+    height: 12px; 
+} 
+
+
+43. Abzeichen/Band
+
+
+#badge-ribbon { 
+    position: relative; 
+    background: #037CA9; 
+    height: 100px; 
+    width: 100px; 
+    -moz-border-radius: 50px; 
+    -webkit-border-radius: 50px; 
+    border-radius: 50px; 
+} 
+ 
+#badge-ribbon:before, #badge-ribbon:after { 
+    content: ''; 
+    position: absolute; 
+    border-bottom: 70px solid #037CA9; 
+    border-left: 40px solid transparent; 
+    border-right: 40px solid transparent; 
+    top: 70px; 
+    left: -10px; 
+    -webkit-transform: rotate(-140deg); 
+    -moz-transform: rotate(-140deg); 
+    -ms-transform: rotate(-140deg); 
+    -o-transform: rotate(-140deg); 
+} 
+ 
+#badge-ribbon:after { 
+    left: auto; 
+    right: -10px; 
+    -webkit-transform: rotate(140deg); 
+    -moz-transform: rotate(140deg); 
+    -ms-transform: rotate(140deg); 
+    -o-transform: rotate(140deg); 
+} 
+
+
+44. Space Invader
+
+
+#space-invader{ 
+    box-shadow: 0 0 0 1em #037CA9, 0 1em 0 1em #037CA9, -2.5em 1.5em 0 .5em #037CA9, 2.5em 1.5em 0 .5em #037CA9, -3em -3em 0 0 #037CA9, 3em -3em 0 0 #037CA9, -2em -2em 0 0 #037CA9, 2em -2em 0 0 #037CA9, -3em -1em 0 0 #037CA9, -2em -1em 0 0 #037CA9, 2em -1em 0 0 #037CA9, 3em -1em 0 0 #037CA9, -4em 0 0 0 #037CA9, -3em 0 0 0 #037CA9, 3em 0 0 0 #037CA9, 4em 0 0 0 #037CA9, -5em 1em 0 0 #037CA9, -4em 1em 0 0 #037CA9, 4em 1em 0 0 #037CA9, 5em 1em 0 0 #037CA9, -5em 2em 0 0 #037CA9, 5em 2em 0 0 #037CA9, -5em 3em 0 0 #037CA9, -3em 3em 0 0 #037CA9, 3em 3em 0 0 #037CA9, 5em 3em 0 0 #037CA9, -2em 4em 0 0 #037CA9, -1em 4em 0 0 #037CA9, 1em 4em 0 0 #037CA9, 2em 4em 0 0 #037CA9; 
+  background: #037CA9; 
+  width: 1em; 
+  height: 1em; 
+  overflow: hidden; 
+  margin: 50px 0 70px 65px; 
+} 
+
+
+45. Fernseher
+
+
+#tv { 
+    position: relative; 
+    width: 200px; 
+    height: 150px; 
+    margin: 20px 0; 
+    background: #037CA9; 
+    border-radius: 50% / 10%; 
+    color: white; 
+    text-align: center; 
+    text-indent: .1em; 
+} 
+ 
+#tv:before { 
+    content: ''; 
+    position: absolute; 
+    top: 10%; bottom: 10%; 
+    right: -5%; 
+    left: -5%; 
+    background: inherit; 
+    border-radius: 5% / 50%; 
+} 
+
+
+46. Winkel
+
+
+#chevron:before { 
+    content: ''; 
+    position: absolute; 
+    top: 0; left: 0; 
+    height: 100%; 
+    width: 51%; 
+    background: #037CA9; 
+    -webkit-transform: skew(0deg, 6deg); 
+    -moz-transform: skew(0deg, 6deg); 
+    -ms-transform: skew(0deg, 6deg); 
+    -o-transform: skew(0deg, 6deg); 
+    transform: skew(0deg, 6deg); 
+} 
+ 
+#chevron:after { 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    height: 100%; 
+    width: 50%; 
+    background: #037CA9; 
+    -webkit-transform: skew(0deg, -6deg); 
+    -moz-transform: skew(0deg, -6deg); 
+    -ms-transform: skew(0deg, -6deg); 
+    -o-transform: skew(0deg, -6deg); 
+    transform: skew(0deg, -6deg); 
+} 
+
+
+47. Lupe
+
+
+#magnifying-glass { 
+    font-size: 10em; /* This controls the size. */
+    display: inline-block; 
+    width: 0.4em; 
+    height: 0.4em; 
+    border: 0.1em solid #037CA9; 
+    position: relative; 
+    border-radius: 0.35em; 
+} 
+ 
+#magnifying-glass::before { 
+    content: ""; 
+    display: inline-block; 
+    position: absolute; 
+    right: -0.25em; 
+    bottom: -0.1em; 
+    border-width: 0; 
+    background: #037CA9; 
+    width: 0.35em; 
+    height: 0.08em; 
+    -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+} 
+
+
+48. Gekrümmter Pfeil
+
+
+#curvedarrow { 
+    position: relative; 
+    width: 0; 
+    height: 0; 
+    border-top: 9px solid transparent; 
+    border-right: 9px solid #037CA9; 
+    -webkit-transform: rotate(10deg); 
+    -moz-transform: rotate(10deg); 
+    -ms-transform: rotate(10deg); 
+    -o-transform: rotate(10deg); 
+} 
+ 
+#curvedarrow:after { 
+    content: ""; 
+    position: absolute; 
+    border: 0 solid transparent; 
+    border-top: 3px solid #037CA9; 
+    border-radius: 20px 0 0 0; 
+    top: -12px; 
+    left: -9px; 
+    width: 12px; 
+    height: 12px; 
+    -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+} 
+
+
+49. Pfeil (Nach rechts)
+
+
+.outer_circle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 500px;
+    height: 500px;
+    background: #037CA9;
+    border-radius: 250px;
+}
+ 
+.inner_circle { 
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 400px;
+    height: 400px;
+    background: #FFF;
+    border-radius: 250px;
+}
+ 
+.square {
+    position: absolute;
+    left: 420px;
+    top: 90px;
+    width: 100px;
+    height: 125px;
+    background: #FFF;
+}
+ 
+.triangle1 {
+    position: absolute;
+    left: 360px;
+    top: 50px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #037CA9 transparent;
+}
+ 
+#reduce {
+    -webkit-transform: rotate(15deg) scale(0.2);
+    -moz-transform: rotate(15deg) scale(0.2);
+    -ms-transform: rotate(15deg) scale(0.2);
+    margin-top: 30px;
+} 
